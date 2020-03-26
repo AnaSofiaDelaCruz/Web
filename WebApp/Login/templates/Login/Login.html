@@ -1,0 +1,57 @@
+<! doctype html />
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>Tarea </title>
+    {% load bootstrap4 %}
+
+    {% bootstrap_css %}
+
+
+</head>
+
+<body>
+    <br>
+    <br>
+    <div class="mx-auto border border-danger" style="width:200px"> 
+        <br>
+        <div class="container">
+            <form action = "POST">
+                <!-- Imagen -->
+                <div class="form-group" style="text-align: center">
+                    <img class="rounded-circle border border-white" style="width: 100px"
+                    src="https://i.pinimg.com/originals/5a/9f/67/5a9f672a8a27ff7094fe15b15c8f5dec.jpg">
+                </div>
+                <!-- FinImagen  -->
+                <!-- Email -->
+                <div class="form-group">
+                    <input type="email" class="form-control border border-blue" 
+                    aria-describedby="emailHelp" placeholder="Email" name="User" required>
+
+                </div>
+                <!-- Fin Email -->
+                <br>
+                <!-- Password -->
+                <div class="form-group">
+                        <input type="password" class="form-control border border-blue" 
+                        placeholder="Password" name="password" required>
+                    
+                </div>
+                <!-- Fin Password -->
+                <button type="submit">Aceptar</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- {# JS y jQuery Bootstrap #}
+    {% bootstrap_javascript jquery='full' %} -->
+</body>
+
+</html>
